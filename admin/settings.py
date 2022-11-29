@@ -31,6 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    #"hello.apps.HelloConfig",
+    #"users.apps.UsersConfig",
+    #"movie.m_user.apps.MUserConfig",
+    #"blog.b_user.apps.BUserConfig",
+    "shop.s_user.apps.SUserConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -76,10 +81,10 @@ WSGI_APPLICATION = "admin.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": BASE_DIR / "mydb",
+        "NAME": "mydb",
         "USER": "root",
         "PASSWORD": "root",
-        "HOST":"mysql-container",
+        "HOST":"localhost",
         "PORT": "3306"
 
     }
